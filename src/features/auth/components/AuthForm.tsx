@@ -163,7 +163,7 @@ export const AuthForm: React.FC<Props> = ({
         label={isSignup ? 'Create account' : 'Sign in'}
         onPress={submitHandler}
         loading={loading}
-        disabled={!acceptedTerms || loading}
+        disabled={loading}
       />
     </View>
   );

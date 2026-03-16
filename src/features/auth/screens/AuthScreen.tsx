@@ -50,10 +50,11 @@ export const AuthScreen: React.FC<Props> = ({ navigation }) => {
       </View>
 
       <Text variant="title" style={styles.title} color={COLORS.primary}>
-        Create account
+        {mode === 'signup' ? 'Create account' : 'Sign in'}
       </Text>
+
       <Text variant="subtitle" style={styles.subtitle} color={COLORS.subtext}>
-        Complete the sign up to get started
+        {mode === 'signup' ? 'Complete the sign up to get started' : 'Sign in to your account'}
       </Text>
 
       <View style={styles.formContainer}>
