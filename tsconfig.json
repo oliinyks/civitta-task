@@ -1,0 +1,43 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "react-native",
+    "lib": ["es2022", "esnext.asynciterable"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "incremental": true,
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@navigation/*": ["src/app/navigation/*"],
+      "@features/*": ["src/features/*"],
+      "@shared/*": ["src/shared/*"],
+      "@ui/*": ["src/shared/ui/*"],
+      "@utils/*": ["src/shared/utils/*"],
+      "@constants/*": ["src/shared/constants/*"],
+      "@types/*": ["src/shared/types/*"],
+      "@store/*": ["src/store/*"]
+    },
+    "types": [
+      "react",
+      "react-native",
+      "react-native-reanimated",
+      "react-native-svg"
+    ],
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true
+  },
+  "include": ["src", "index.ts", "index.js"],
+  "exclude": ["node_modules"]
+}
