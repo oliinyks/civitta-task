@@ -175,6 +175,7 @@ const styles = StyleSheet.create({
     height: 6,
     borderRadius: 999,
     marginHorizontal: 4,
+    backgroundColor: COLORS.placeholder,
   },
   indicatorActive: {
     width: 6,
