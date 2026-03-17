@@ -33,7 +33,9 @@
       "react",
       "react-native",
       "react-native-reanimated",
-      "react-native-svg"
+      "react-native-svg",
+      "jest",
+      "node"
     ],
     "strictFunctionTypes": true,
     "strictBindCallApply": true

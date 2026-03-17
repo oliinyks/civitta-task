@@ -32,6 +32,12 @@ npm run ios
 npm run lint
 ```
 
+- **Run tests**
+
+```bash
+npm run test
+```
+
 ### Technologies Used
 
 - **React Native + Expo**: mobile application, running in Expo Go.
@@ -45,3 +51,4 @@ npm run lint
 - **React Native Reanimated**: animation of indicators on the onboarding screen.
 - **React Native Gesture Handler / Safe Area Context / Screens**: gestures, safe areas, productive navigation.
 - **ESLint**: linting of code (via `eslint-config-universe`).
+- **Jest**: unit and component testing setup for React Native (with React Native Testing Library).
