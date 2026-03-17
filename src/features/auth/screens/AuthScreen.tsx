@@ -40,7 +40,7 @@ export const AuthScreen: React.FC<Props> = ({ navigation }) => {
   return (
     <ScreenContainer type='form'>
       <View style={styles.headerRow}>
-        {!showBack ? (
+        {showBack ? (
           <TouchableOpacity onPress={navigation.goBack} style={styles.backButton}>
             <Ionicons name="chevron-back" size={20} color={COLORS.text} />
           </TouchableOpacity>
